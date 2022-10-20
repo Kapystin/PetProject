@@ -19,10 +19,18 @@ namespace Scripts.SO
         [Tooltip("Grid Cell Prefab")] 
         [SerializeField] private GameObject _gridCellPrefab;
         
+
+        [Header("Camera Settings")] 
+        [SerializeField] private Vector3 _cameraOffset;
+
+        [Header("Avatar Settings")]
         [SerializeField] private GameObject _avatarPrefab;
+        [SerializeField] private float _avatarMoveSpeed = 5;
 
         public GameObject GridCellPrefab => _gridCellPrefab;
         public GameObject AvatarPrefab => _avatarPrefab;
+        public float AvatarMoveSpeed => _avatarMoveSpeed;
+        public Vector3 CameraOffset => _cameraOffset;
 
 
         public static void Initialize(Action onComplete = null)

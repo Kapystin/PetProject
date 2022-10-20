@@ -13,7 +13,6 @@ namespace Scripts.ECS.Systems
         protected override void OnCreate()
         {
             RequireForUpdate(GetEntityQuery(typeof(MainAppConfigTag), typeof(MainAppConfig)));
-            // RequireForUpdate(GetEntityQuery(typeof(SpawnAvatarComponent)));
         }
 
         protected override void OnUpdate()
@@ -31,6 +30,7 @@ namespace Scripts.ECS.Systems
 #if UNITY_EDITOR
                 EntityManager.SetName(avatarEntity, $"Avatar");
 #endif
+                EntityManager.AddComponentData(avatarEntity, new AvatarTag());
                 EntityManager.DestroyEntity(e);
                 
             }).Run();
