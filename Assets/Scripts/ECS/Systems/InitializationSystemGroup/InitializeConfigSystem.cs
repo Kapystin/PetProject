@@ -1,4 +1,6 @@
 using ECS.Components;
+using Scripts.ECS.Components;
+using Scripts.SO;
 using Unity.Entities;
 using UnityEngine;
 
@@ -19,18 +21,12 @@ namespace Scripts.ECS.Systems.InitializationSystemGroup
 #endif
             MainAppConfig.Initialize(() =>
             {
-                // if (HasSingleton<MainAppConfigTag>())
-                // {
-                //     configEntity = GetSingletonEntity<MainAppConfigTag>();
-                // }
-                // else
-                // {
-                //     configEntity = EntityManager.CreateEntity();
-                //     EntityManager.AddComponent<MainAppConfigTag>(configEntity);
-                // }
-                
                 EntityManager.AddComponentObject(configEntity, MainAppConfig.Instance);
             });
+            
+            //TO_DO remove from here later
+            var spawnAvatarEntity = EntityManager.CreateEntity();
+            EntityManager.AddComponentData(spawnAvatarEntity, new SpawnAvatarComponent() {AvatarType = 0});
         }
     }
 }

@@ -6,8 +6,11 @@ namespace Scripts.Camera
 {
     public class CameraController : MonoBehaviour
     {
+        public VariableJoystick VariableJoystick => _variableJoystick;
+        
         [SerializeField] private float _moveSpeed;
         [SerializeField] private VariableJoystick _variableJoystick;
+
         
         private void Update()
         {

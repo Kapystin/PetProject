@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -9,14 +7,31 @@ namespace Scripts.Debug
     {
         [SerializeField] private TMP_Text _displayText;
 
-        private int _avgFrameRate;
-        
-        public void Update()
+        private int _lastFrameIndex;
+        private float[] _frameDeltaTimeArray;
+
+        private void Start()
         {
-            float current = 0;
-            current = Time.frameCount / Time.time;
-            _avgFrameRate = (int) current;
-            _displayText.text = $"{_avgFrameRate} FPS";
+            _frameDeltaTimeArray = new float[50];
+        }
+
+        private void Update()
+        {
+            _frameDeltaTimeArray[_lastFrameIndex] = Time.deltaTime;
+            _lastFrameIndex = (_lastFrameIndex + 1) % _frameDeltaTimeArray.Length;
+            
+            _displayText.text = $"{Mathf.RoundToInt(CalculateFPS())} FPS";
+        }
+
+        private float CalculateFPS()
+        {
+            float total = 0f;
+            foreach (var deltaTime in _frameDeltaTimeArray)
+            {
+                total += deltaTime;
+            }
+
+            return _frameDeltaTimeArray.Length / total;
         }
     }
 }
