@@ -25,6 +25,12 @@
             "name": "com.sec.android.app.launcher",
             "processId": 2626,
             "exited": false
+        },
+        {
+            "deviceId": "RZ8R720V69M",
+            "name": "org.telegram.messenger",
+            "processId": 32696,
+            "exited": false
         }
     ],
     "m_Tags": {

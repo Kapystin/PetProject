@@ -504,6 +504,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Variable Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 3881087803549984437, guid: ec536a7718376554185e4a856d5ae230,
+        type: 3}
+      propertyPath: m_TagString
+      value: VariableJoystick
+      objectReference: {fileID: 0}
     - target: {fileID: 3881087803549984439, guid: ec536a7718376554185e4a856d5ae230,
         type: 3}
       propertyPath: deadZone
@@ -522,18 +527,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 362275198}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &713601248 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3881087803549984439, guid: ec536a7718376554185e4a856d5ae230,
-    type: 3}
-  m_PrefabInstance: {fileID: 362275198}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42844a4fccbd54746b90cade4ff70f73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &761663980
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +741,6 @@ GameObject:
   - component: {fileID: 961739752}
   - component: {fileID: 961739751}
   - component: {fileID: 961739750}
-  - component: {fileID: 961739754}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -848,27 +840,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 3, z: -5}
+  m_LocalPosition: {x: 0, y: 3, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
---- !u!114 &961739754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd9bdacaf52c8345975edab92cd1927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moveSpeed: 5
-  _variableJoystick: {fileID: 713601248}
 --- !u!1 &1194994439
 GameObject:
   m_ObjectHideFlags: 0

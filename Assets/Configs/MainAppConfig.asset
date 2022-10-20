@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gridCellPrefab: {fileID: 1215849515552725021, guid: 41079c293145a45428770aff9a08d4ac,
     type: 3}
+  _cameraOffset: {x: 0, y: 3, z: -3}
+  _avatarPrefab: {fileID: 5208933402496052006, guid: 15dff6dd4c5d928459cc36713bc80a66,
+    type: 3}
+  _avatarMoveSpeed: 5
