@@ -15,11 +15,7 @@ namespace Scripts.SO
         private static Action _onComplete;
 
         public static MainAppConfig Instance { get; private set; }
-
-        [Tooltip("Grid Cell Prefab")] 
-        [SerializeField] private GameObject _gridCellPrefab;
         
-
         [Header("Camera Settings")] 
         [SerializeField] private Vector3 _cameraOffset;
 
@@ -27,7 +23,6 @@ namespace Scripts.SO
         [SerializeField] private GameObject _avatarPrefab;
         [SerializeField] private float _avatarMoveSpeed = 5;
 
-        public GameObject GridCellPrefab => _gridCellPrefab;
         public GameObject AvatarPrefab => _avatarPrefab;
         public float AvatarMoveSpeed => _avatarMoveSpeed;
         public Vector3 CameraOffset => _cameraOffset;
