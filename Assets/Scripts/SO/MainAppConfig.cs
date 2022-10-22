@@ -20,11 +20,15 @@ namespace Scripts.SO
         [SerializeField] private Vector3 _cameraOffset;
 
         [Header("Avatar Settings")]
-        [SerializeField] private GameObject _avatarPrefab;
+        [SerializeField] private GameObject _avatarEntityColliderPrefab;
+        [SerializeField] private GameObject _avatarModelPrefab;
         [SerializeField] private float _avatarMoveSpeed = 5;
+        [SerializeField] private Vector3 _spawnPosition = Vector3.zero;
 
-        public GameObject AvatarPrefab => _avatarPrefab;
+        public GameObject AvatarEntityColliderPrefab => _avatarEntityColliderPrefab;
+        public GameObject AvatarModelPrefab => _avatarModelPrefab;
         public float AvatarMoveSpeed => _avatarMoveSpeed;
+        public Vector3 SpawnPosition => _spawnPosition;
         public Vector3 CameraOffset => _cameraOffset;
 
 
