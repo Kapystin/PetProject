@@ -10,26 +10,38 @@
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "RZ8R720V69M",
-            "name": "com.myapp.petproject",
-            "processId": 20820,
-            "exited": true
-        },
-        {
-            "deviceId": "RZ8R720V69M",
-            "name": "com.myapp.petproject",
-            "processId": 25463,
-            "exited": true
-        },
-        {
-            "deviceId": "RZ8R720V69M",
             "name": "com.sec.android.app.launcher",
             "processId": 2626,
             "exited": false
         },
         {
             "deviceId": "RZ8R720V69M",
-            "name": "org.telegram.messenger",
-            "processId": 32696,
+            "name": "com.myapp.petproject",
+            "processId": 3689,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8R720V69M",
+            "name": "com.myapp.petproject",
+            "processId": 13505,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8R720V69M",
+            "name": "com.myapp.petproject",
+            "processId": 13975,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8R720V69M",
+            "name": "com.myapp.petproject",
+            "processId": 14321,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8R720V69M",
+            "name": "com.sec.android.daemonapp",
+            "processId": 15433,
             "exited": false
         }
     ],

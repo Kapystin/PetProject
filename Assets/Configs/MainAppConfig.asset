@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f90041228090c34d94906102e76e13f, type: 3}
   m_Name: MainAppConfig
   m_EditorClassIdentifier: 
-  _gridCellPrefab: {fileID: 1215849515552725021, guid: 41079c293145a45428770aff9a08d4ac,
-    type: 3}
   _cameraOffset: {x: 0, y: 3, z: -3}
-  _avatarPrefab: {fileID: 5208933402496052006, guid: 15dff6dd4c5d928459cc36713bc80a66,
+  _avatarEntityColliderPrefab: {fileID: 5208933402496052006, guid: 15dff6dd4c5d928459cc36713bc80a66,
+    type: 3}
+  _avatarModelPrefab: {fileID: 4946130940063047585, guid: 7d5ad0d3d0b32434aa1536cf4c94a3ae,
     type: 3}
   _avatarMoveSpeed: 5
+  _spawnPosition: {x: 0, y: 0, z: 0}
