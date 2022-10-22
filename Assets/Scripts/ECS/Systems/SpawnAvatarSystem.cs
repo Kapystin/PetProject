@@ -5,8 +5,10 @@ using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Physics.Authoring;
+using Unity.Rendering;
 using Unity.Transforms;
 using UnityEngine;
+using CapsuleCollider = Unity.Physics.CapsuleCollider;
 using Collider = Unity.Physics.Collider;
 
 namespace Scripts.ECS.Systems
@@ -24,7 +26,7 @@ namespace Scripts.ECS.Systems
         {
             if (_avatarPrefabEntity == Entity.Null)
             {
-                _avatarPrefabEntity = ConvertToEntity(EntityManager);    
+                _avatarPrefabEntity = ConvertToEntity(EntityManager);
             }
 
             Entities
@@ -32,49 +34,40 @@ namespace Scripts.ECS.Systems
                 .WithStructuralChanges()
                 .ForEach((Entity e, in SpawnAvatarComponent spawnAvatarComponent) =>
                 {
+                    var colliderPrefabTransform = MainAppConfig.Instance.AvatarEntityColliderPrefab.transform;
                     var spawnPoint = MainAppConfig.Instance.SpawnPosition;
                     var avatarModel = GameObject.Instantiate(MainAppConfig.Instance.AvatarModelPrefab);
                     var avatarColliderEntity = EntityManager.Instantiate(_avatarPrefabEntity);
 
                     avatarModel.transform.position = spawnPoint;
-                    
+
                     var translation = new Translation() {Value = spawnPoint};
                     EntityManager.AddComponentData(avatarColliderEntity, translation);
 
                     var boxCollider = Unity.Physics.BoxCollider.Create(new BoxGeometry()
                             {
-                                Center = float3.zero,
-                                Size = new float3(1f, 1f, 1f), 
+                                Center = colliderPrefabTransform.position,
+                                Size = colliderPrefabTransform.localScale, 
                                 Orientation = quaternion.identity,
                                 BevelRadius = 0.05f
                             },
                         CollisionFilter.Default);
-                    
+
+
                     var physicsCollider = new PhysicsCollider()
                     {
                         Value = boxCollider
                     };
 
-                    var physicsVelocity = new PhysicsVelocity();
-                    var physicsMass = PhysicsMass.CreateDynamic(physicsCollider.MassProperties, 1f);
-                    // {
-                    //     InverseMass = 1f,
-                    //     CenterOfMass = 
-                    //     
-                    //     // InverseInertia = new float3(6f, 6f, 6f)
-                    // };
-                    var physicsDamping = new PhysicsDamping()
-                    {
-                        // Linear = 0.1f,
-                        // Angular = 0.05f
-                    };
-
+                    
+                    var physicsVelocity = new PhysicsVelocity(){};
+                    var physicsMass = PhysicsMass.CreateDynamic(physicsCollider.MassProperties, 0.5f);
+                    physicsMass.InverseInertia = new float3(0f, physicsMass.InverseInertia.y, 0f);
                     var physicsWorldIndex = new PhysicsWorldIndex(){ Value = 0};
 
                     EntityManager.AddComponentData(avatarColliderEntity, physicsCollider);
                     EntityManager.AddComponentData(avatarColliderEntity, physicsVelocity);
                     EntityManager.AddComponentData(avatarColliderEntity, physicsMass);
-                    // EntityManager.AddComponentData(avatarColliderEntity, physicsDamping);
                     EntityManager.AddSharedComponentData(avatarColliderEntity, physicsWorldIndex);
                     
                     

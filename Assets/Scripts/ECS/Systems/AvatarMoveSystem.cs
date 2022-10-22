@@ -3,7 +3,9 @@ using Scripts.ECS.Components;
 using Scripts.SO;
 using Unity.Entities;
 using Unity.Mathematics;
+using Unity.Physics;
 using Unity.Transforms;
+using UnityEngine;
 
 namespace Scripts.ECS.Systems
 {
@@ -11,6 +13,7 @@ namespace Scripts.ECS.Systems
     {
         private Entity _joystickInputEntity;
         private JoystickInputComponent _joystickInputComponent;
+        private float _clampValue = 3f;
 
         protected override void OnCreate()
         {
@@ -27,7 +30,7 @@ namespace Scripts.ECS.Systems
             Entities
                 .WithoutBurst()
                 .WithAll<AvatarTag>()
-                .ForEach((Entity e, ref Translation translation) =>
+                .ForEach((Entity e, ref PhysicsVelocity physicsVelocity, ref Rotation rotation) =>
                 {
                     if (HasSingleton<JoystickInputComponent>() == false) return;
                     
@@ -35,7 +38,13 @@ namespace Scripts.ECS.Systems
                     _joystickInputComponent = EntityManager.GetComponentData<JoystickInputComponent>(_joystickInputEntity);
                     
                     var movement = new float3(_joystickInputComponent.Horizontal, 0, _joystickInputComponent.Vertical);
-                    translation.Value += movement * MainAppConfig.Instance.AvatarMoveSpeed * deltaTime;
+                    physicsVelocity.Linear.xyz += movement * MainAppConfig.Instance.AvatarMoveSpeed * deltaTime;
+                    physicsVelocity.Linear.xyz = new float3
+                    (
+                        Mathf.Clamp(physicsVelocity.Linear.x, -_clampValue, _clampValue),
+                        physicsVelocity.Linear.y,
+                        Mathf.Clamp(physicsVelocity.Linear.z, -_clampValue, _clampValue)
+                    );
                 }).Run();
         }
     }
