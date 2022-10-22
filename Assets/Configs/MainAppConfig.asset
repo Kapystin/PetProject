@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: MainAppConfig
   m_EditorClassIdentifier: 
   _cameraOffset: {x: 0, y: 3, z: -3}
-  _avatarEntityColliderPrefab: {fileID: 5208933402496052006, guid: 15dff6dd4c5d928459cc36713bc80a66,
+  _avatarEntityColliderPrefab: {fileID: 6395886427151759961, guid: 5a25090f15e52c640ac06353814aaefa,
     type: 3}
   _avatarModelPrefab: {fileID: 4946130940063047585, guid: 7d5ad0d3d0b32434aa1536cf4c94a3ae,
     type: 3}
-  _avatarMoveSpeed: 5
-  _spawnPosition: {x: 0, y: 0, z: 0}
+  _avatarMoveSpeed: 9
+  _spawnPosition: {x: 0, y: 2, z: 0}

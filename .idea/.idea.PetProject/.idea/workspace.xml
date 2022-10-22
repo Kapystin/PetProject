@@ -3,15 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="cbf4396f-67d9-415a-94d8-9029299b5588" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PetProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PetProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Configs/MainAppConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/MainAppConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Avatar.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Avatar.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_A.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_B.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_B.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_C.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_C.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_D.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_A.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_B.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_B.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_C.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_C.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Plain/Materials/Wood_Plain_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Plain/Materials/Wood_Plain_A.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Plain/Materials/Wood_Plain_B.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Plain/Materials/Wood_Plain_B.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Planks/Materials/Wood_Planks_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Planks/Materials/Wood_Planks_A.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Planks/Materials/Wood_Planks_B.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Planks/Materials/Wood_Planks_B.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Avatar.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Avatar.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AvatarColliderEntity.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AvatarColliderEntity.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DogPolyart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DogPolyart.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/AvatarMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/AvatarMoveSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/SpawnAvatarSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/SpawnAvatarSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/MainAppConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/MainAppConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +37,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../avvy-app/Assets/AvvyLand/Scripts/ECS/GenericBaseSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.51.1-preview.21/Unity.Entities/Stubs/Unity/Debug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/14b5264ad26847c9b5c8c5f2ecdf194d126e00/65/a33b4104/IJobEntity.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +92,7 @@
       <workItem from="1666066962592" duration="3436000" />
       <workItem from="1666251123136" duration="4903000" />
       <workItem from="1666257195844" duration="5702000" />
-      <workItem from="1666414579550" duration="6256000" />
+      <workItem from="1666414579550" duration="13842000" />
     </task>
     <servers />
   </component>
