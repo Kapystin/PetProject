@@ -24,7 +24,8 @@ namespace Scripts.ECS.Systems
             var joystickInputComponent = new JoystickInputComponent()
             {
                 Horizontal = _variableJoystick.Horizontal,
-                Vertical = _variableJoystick.Vertical
+                Vertical = _variableJoystick.Vertical,
+                Direction = _variableJoystick.Direction
             };
             
             EntityManager.SetComponentData(_joystickInputEntity, joystickInputComponent);

@@ -17,5 +17,5 @@ MonoBehaviour:
     type: 3}
   _avatarModelPrefab: {fileID: 4946130940063047585, guid: 7d5ad0d3d0b32434aa1536cf4c94a3ae,
     type: 3}
-  _avatarMoveSpeed: 9
+  _avatarMoveSpeed: 5
   _spawnPosition: {x: 0, y: 2, z: 0}

@@ -1,5 +1,6 @@
 using Scripts.ECS.Components;
 using Unity.Entities;
+using Unity.Mathematics;
 using Unity.Transforms;
 using UnityEngine;
 
@@ -24,7 +25,10 @@ namespace Scripts.ECS.Systems
             Entities
                 .WithoutBurst()
                 .WithAny<AvatarTag>()
-                .ForEach((Entity e, in Translation translation) => { _avatar.transform.position = translation.Value; })
+                .ForEach((Entity e, in Translation translation, in Rotation rotation) =>
+                {
+                    _avatar.transform.position = translation.Value;
+                })
                 .Run();
         }
     }

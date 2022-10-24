@@ -17,18 +17,6 @@
         {
             "deviceId": "RZ8R720V69M",
             "name": "com.myapp.petproject",
-            "processId": 3689,
-            "exited": true
-        },
-        {
-            "deviceId": "RZ8R720V69M",
-            "name": "com.myapp.petproject",
-            "processId": 13505,
-            "exited": true
-        },
-        {
-            "deviceId": "RZ8R720V69M",
-            "name": "com.myapp.petproject",
             "processId": 13975,
             "exited": true
         },
@@ -42,7 +30,13 @@
             "deviceId": "RZ8R720V69M",
             "name": "com.sec.android.daemonapp",
             "processId": 15433,
-            "exited": false
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8R720V69M",
+            "name": "com.myapp.petproject",
+            "processId": 21946,
+            "exited": true
         }
     ],
     "m_Tags": {

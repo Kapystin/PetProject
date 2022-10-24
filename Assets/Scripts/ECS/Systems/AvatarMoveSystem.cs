@@ -1,4 +1,4 @@
-using ECS.Components;
+using System.Numerics;
 using Scripts.ECS.Components;
 using Scripts.SO;
 using Unity.Entities;
@@ -6,6 +6,7 @@ using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Transforms;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Scripts.ECS.Systems
 {
@@ -30,21 +31,26 @@ namespace Scripts.ECS.Systems
             Entities
                 .WithoutBurst()
                 .WithAll<AvatarTag>()
-                .ForEach((Entity e, ref PhysicsVelocity physicsVelocity, ref Rotation rotation) =>
+                .ForEach((Entity e, ref PhysicsVelocity physicsVelocity, ref Rotation rotation, ref Translation translation, ref LocalToWorld transform) =>
                 {
                     if (HasSingleton<JoystickInputComponent>() == false) return;
                     
                     _joystickInputEntity = GetSingletonEntity<JoystickInputComponent>();
                     _joystickInputComponent = EntityManager.GetComponentData<JoystickInputComponent>(_joystickInputEntity);
+
+                    var movement = new Vector3(0f, physicsVelocity.Linear.y, 0f) 
+                                   + (Vector3.right * _joystickInputComponent.Horizontal * MainAppConfig.Instance.AvatarMoveSpeed)
+                                   + (Vector3.forward * _joystickInputComponent.Vertical * MainAppConfig.Instance.AvatarMoveSpeed);
+                    physicsVelocity.Linear.xyz = movement;
                     
-                    var movement = new float3(_joystickInputComponent.Horizontal, 0, _joystickInputComponent.Vertical);
-                    physicsVelocity.Linear.xyz += movement * MainAppConfig.Instance.AvatarMoveSpeed * deltaTime;
                     physicsVelocity.Linear.xyz = new float3
                     (
                         Mathf.Clamp(physicsVelocity.Linear.x, -_clampValue, _clampValue),
                         physicsVelocity.Linear.y,
                         Mathf.Clamp(physicsVelocity.Linear.z, -_clampValue, _clampValue)
                     );
+                    
+                    
                 }).Run();
         }
     }

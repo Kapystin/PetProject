@@ -3,28 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cbf4396f-67d9-415a-94d8-9029299b5588" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PetProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PetProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/MainAppConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Configs/MainAppConfig.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_B.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_B.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_C.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_C.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_D.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Bricks/Materials/Wall_Brick_D.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_B.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_B.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_C.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WALLS/WALL_Stone/Materials/Wall_Stone_C.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Plain/Materials/Wood_Plain_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Plain/Materials/Wood_Plain_A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Plain/Materials/Wood_Plain_B.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Plain/Materials/Wood_Plain_B.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Planks/Materials/Wood_Planks_A.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Planks/Materials/Wood_Planks_A.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Planks/Materials/Wood_Planks_B.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Cartoon_Texture_Pack/WOOD/WOOD_Planks/Materials/Wood_Planks_B.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Avatar.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Avatar.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AvatarColliderEntity.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AvatarColliderEntity.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DogPolyart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DogPolyart.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/Android/addressables_content_state.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ECS/Components/JoystickInputComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ECS/Components/JoystickInputComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/AvatarMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/AvatarMoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/GameObjectAvatarFollowSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/GameObjectAvatarFollowSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/JoystickInputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/JoystickInputSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/SpawnAvatarSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ECS/Systems/SpawnAvatarSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/AndroidLogcatSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +80,10 @@
       <workItem from="1666066962592" duration="3436000" />
       <workItem from="1666251123136" duration="4903000" />
       <workItem from="1666257195844" duration="5702000" />
-      <workItem from="1666414579550" duration="13842000" />
+      <workItem from="1666414579550" duration="16577000" />
+      <workItem from="1666447051595" duration="605000" />
+      <workItem from="1666500863721" duration="3835000" />
+      <workItem from="1666584264290" duration="10188000" />
     </task>
     <servers />
   </component>
