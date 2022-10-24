@@ -62,7 +62,7 @@ namespace Scripts.ECS.Systems
                     
                     var physicsVelocity = new PhysicsVelocity(){};
                     var physicsMass = PhysicsMass.CreateDynamic(physicsCollider.MassProperties, 0.5f);
-                    physicsMass.InverseInertia = new float3(0f, physicsMass.InverseInertia.y, 0f);
+                    physicsMass.InverseInertia = new float3(0f, 0f, 0f);
                     var physicsWorldIndex = new PhysicsWorldIndex(){ Value = 0};
 
                     EntityManager.AddComponentData(avatarColliderEntity, physicsCollider);

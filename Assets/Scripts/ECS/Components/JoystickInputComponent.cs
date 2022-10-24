@@ -1,4 +1,5 @@
 using Unity.Entities;
+using Unity.Mathematics;
 
 namespace Scripts.ECS.Components
 {
@@ -6,5 +7,6 @@ namespace Scripts.ECS.Components
     {
         public float Horizontal;
         public float Vertical;
+        public float2 Direction;
     }
 }
