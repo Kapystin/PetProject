@@ -11,7 +11,6 @@ namespace Scripts.ECS.Systems
         
         private Entity _joystickInputEntity;
         private JoystickInputComponent _joystickInputComponent;
-        private float _clampValue = 31f;
 
         protected override void OnCreate()
         {

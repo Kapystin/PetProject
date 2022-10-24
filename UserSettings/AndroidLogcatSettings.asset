@@ -17,12 +17,6 @@
         {
             "deviceId": "RZ8R720V69M",
             "name": "com.myapp.petproject",
-            "processId": 13975,
-            "exited": true
-        },
-        {
-            "deviceId": "RZ8R720V69M",
-            "name": "com.myapp.petproject",
             "processId": 14321,
             "exited": true
         },
@@ -36,6 +30,12 @@
             "deviceId": "RZ8R720V69M",
             "name": "com.myapp.petproject",
             "processId": 21946,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8R720V69M",
+            "name": "com.myapp.petproject",
+            "processId": 18356,
             "exited": true
         }
     ],

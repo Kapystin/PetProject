@@ -25,7 +25,7 @@ namespace Scripts.ECS.Systems
             {
                 Horizontal = _variableJoystick.Horizontal,
                 Vertical = _variableJoystick.Vertical,
-                Direction = _variableJoystick.Direction
+                Direction = _variableJoystick.Direction,
             };
             
             EntityManager.SetComponentData(_joystickInputEntity, joystickInputComponent);
